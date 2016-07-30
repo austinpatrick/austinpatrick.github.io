@@ -14,8 +14,13 @@ a:visited {
 }
 
 #title {
-	color: gray;
+	margin-left: 5%;
+	color: black;
 	font-size: 25px;
-	text-align: center;
 	text-decoration: none;
+}
+
+#title-image {
+	height: auto;
+	width: 100%;
 }
