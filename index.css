@@ -4,17 +4,17 @@ body {
 }
 
 a:visited {
-	color: white;
+	color: gray;
 }
 
 #nav {
 	height: 5%;
 	width: 100%;
-	background-color: #496C89;
+	background-color: white;
 }
 
 #title {
-	color: white;
+	color: gray;
 	font-size: 25px;
 	text-align: center;
 	text-decoration: none;
