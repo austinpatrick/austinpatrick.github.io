@@ -14,8 +14,8 @@ a:visited {
 }
 
 #title {
-	margin-left: 2%;
 	color: white;
 	font-size: 25px;
+	text-align: center;
 	text-decoration: none;
 }
