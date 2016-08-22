@@ -68,12 +68,7 @@ img {
 	margin-left: 30%;
 }
 
-#header-img-container {
-	top: -100px;
-}
-
 #image-background {
-  position:absolute;
    z-index: -1;
 }
 
