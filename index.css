@@ -88,11 +88,12 @@ img {
 
 #tag {
 	font-size: 52px;
-	color: white;
+	color: #f0eceb;
 	top: 26%;
 	left: 33%;
 	position: absolute;
 	z-index: 1;
+	opacity: .9;
 }
 
 #about {
