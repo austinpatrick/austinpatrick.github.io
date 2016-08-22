@@ -1,8 +1,8 @@
 body {
 	margin-top: 0px;
 	margin-left: 0px;
+	margin-right: 0px;
 	font-family: Arial;
-	color: #3F9FFF;
 }
 
 img {
@@ -11,18 +11,27 @@ img {
 
 #upper-nav {
 	height: 25px;
-	background-color: #3F9FFF;
+	background-color: #0062FF;
 	color: white;
-	margin-right: 0;
-	font-size: 13px;
+	font-size: 12px;
+}
+
+#upper-nav a {
+	color: white;
+	text-decoration: none;
+}
+
+#upper-nav a:hover {
+	color: #CFE3FC;
 }
 
 #nav {
-	height: 25px;
+	height: 45px;
 	width: 100%;
-	padding-left: 15%;
-	padding-right: 15%;
-	background-color: white;
+	line-height: 45px;
+	padding-left: 2%;
+	padding-right: 2%;
+	background-color: #F2F4F5;
 	opacity: .9%;
 }
 
@@ -32,7 +41,7 @@ img {
 }
 
 #nav a:visited {
-	color: gray;
+	color: #0062FF;
 }
 
 #nav-left {
@@ -42,7 +51,7 @@ img {
 }
 
 .nav-right {
-	margin-left: 5%;
+	
 }
 
 #top {
@@ -60,12 +69,12 @@ img {
 }
 
 #header-img-container {
-	width: 100%;
+	top: -100px;
 }
 
 #image-background {
   position:absolute;
-    z-index: -1;
+   z-index: -1;
 }
 
 #adventure-description{
