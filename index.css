@@ -1,31 +1,100 @@
 body {
 	margin-top: 0px;
-	margin-left: 10%;
-	margin-right: 10%;
+	margin-left: 0px;
 	font-family: Arial;
+	color: #3F9FFF;
 }
 
-a:visited {
-	color: gray;
+img {
+	width: 100%;
+}
+
+#upper-nav {
+	height: 25px;
+	background-color: #3F9FFF;
+	color: white;
+	margin-right: 0;
+	font-size: 13px;
 }
 
 #nav {
-	height: 10%;
+	height: 25px;
 	width: 100%;
+	padding-left: 15%;
+	padding-right: 15%;
 	background-color: white;
 	opacity: .9%;
-	position: fixed;
-	z-index: 1;
 }
 
-#title {
-	margin-left: 5%;
-	color: black;
-	font-size: 25px;
+#nav a {
 	text-decoration: none;
+	
+}
+
+#nav a:visited {
+	color: gray;
+}
+
+#nav-left {
+	line-height: 35px;
+	color: gray;
+	font-size: 20px;
+}
+
+.nav-right {
+	margin-left: 5%;
+}
+
+#top {
+	margin-right: 20%;
+	display: inline;
+	line-height: 25px;
+}
+
+#left {
+	display: inline;
+}
+#right {
+	display: inline;
+	margin-left: 30%;
+}
+
+#header-img-container {
+	width: 100%;
+}
+
+#image-background {
+  position:absolute;
+    z-index: -1;
+}
+
+#adventure-description{
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 15px;
+	text-decoration: none;
+	color: white;
 }
 
 #title-image {
 	height: auto;
 	width: 100%;
+}
+
+.separate {
+	border: 1px solid #e0ebeb;
+}
+
+#what-you-need {
+	margin-left: 20%;
+	margin-right: 20%;
+	color: ;
+}
+
+.need-list {
+	font-size: 15px;
+	color: #85adad;
+	list-style: none;
+	margin-left: 25px;
+
 }
