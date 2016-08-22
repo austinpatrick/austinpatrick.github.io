@@ -11,9 +11,12 @@ img {
 
 #upper-nav {
 	height: 25px;
+	width: 100%;
 	background-color: #0062FF;
 	color: white;
 	font-size: 12px;
+	position: fixed;
+	z-index: 2;
 }
 
 #upper-nav a {
@@ -28,11 +31,14 @@ img {
 #nav {
 	height: 45px;
 	width: 100%;
+	top: 25px;
 	line-height: 45px;
 	padding-left: 2%;
 	padding-right: 2%;
 	background-color: #F2F4F5;
-	opacity: .9%;
+	opacity: .9;
+	position: fixed;
+	z-index: 1;
 }
 
 #nav a {
@@ -51,7 +57,9 @@ img {
 }
 
 .nav-right {
-	
+	margin-left: 5%;
+	margin-right: 2%;
+	line-height: 25px;
 }
 
 #top {
@@ -65,7 +73,7 @@ img {
 }
 #right {
 	display: inline;
-	margin-left: 30%;
+	margin-left: 60%;
 }
 
 #image-background {
