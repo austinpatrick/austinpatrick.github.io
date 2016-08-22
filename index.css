@@ -12,7 +12,7 @@ img {
 #upper-nav {
 	height: 25px;
 	width: 100%;
-	background-color: #0062FF;
+	background-color: #729F98;
 	color: white;
 	font-size: 12px;
 	position: fixed;
@@ -35,7 +35,7 @@ img {
 	line-height: 45px;
 	padding-left: 2%;
 	padding-right: 2%;
-	background-color: #F2F4F5;
+	background-color: white;
 	opacity: .9;
 	position: fixed;
 	z-index: 1;
@@ -43,16 +43,15 @@ img {
 
 #nav a {
 	text-decoration: none;
-	
 }
 
 #nav a:visited {
-	color: #0062FF;
+	color: black;
 }
 
 #nav-left {
 	line-height: 35px;
-	color: gray;
+	color: black;
 	font-size: 20px;
 }
 
