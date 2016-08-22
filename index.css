@@ -29,10 +29,10 @@ img {
 }
 
 #nav {
-	height: 45px;
+	height: 40px;
 	width: 100%;
 	top: 25px;
-	line-height: 45px;
+	line-height: 40px;
 	padding-left: 2%;
 	padding-right: 2%;
 	background-color: white;
@@ -56,8 +56,7 @@ img {
 }
 
 .nav-right {
-	margin-left: 5%;
-	margin-right: 2%;
+	margin-left: 3%;
 	line-height: 25px;
 }
 
@@ -71,20 +70,21 @@ img {
 	display: inline;
 }
 #right {
+	font-size: 13px;
 	display: inline;
-	margin-left: 60%;
+	margin-left: 53%;
 }
 
 #image-background {
    z-index: -1;
 }
 
-#adventure-description{
-	margin-left: 20%;
-	margin-right: 20%;
-	font-size: 15px;
-	text-decoration: none;
-	color: white;
+#about {
+	height: 500px;
+	width: 96%;
+	margin-left: 2%;
+	margin-right: 2%;
+	background-color: #F0ECEB;
 }
 
 #title-image {
