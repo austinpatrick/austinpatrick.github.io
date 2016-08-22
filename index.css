@@ -85,6 +85,15 @@ img {
    z-index: -1;
 }
 
+#tag {
+	font-size: 50px;
+	color: white;
+	top: 175px;
+	left: 10%;
+	position: absolute;
+	z-index: 1;
+}
+
 #about {
 	height: 300px;
 	width: 76%;
