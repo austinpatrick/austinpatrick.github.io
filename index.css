@@ -39,6 +39,7 @@ img {
 	opacity: .9;
 	position: fixed;
 	z-index: 1;
+	box-shadow: 1px 1px 5px #777777;
 }
 
 #nav a {
