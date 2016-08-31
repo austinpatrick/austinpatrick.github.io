@@ -5,7 +5,7 @@ body {
 	margin-bottom: 0;
 
 	font-family: Walkway Bold;
-	color: white;
+	color: black;
 }
 
 a {
@@ -24,6 +24,7 @@ a:hover {
 
 #nav-list li {
 	margin-bottom: 5px;
+	color: #001f3f;
 }
 
 .nav {
@@ -39,7 +40,7 @@ a:hover {
 
 #cover-photo-cover {
 	opacity: .99;
-	color: black;
+	color: #001f3f;
 	width: auto;
 	top: 10px;
 	position: absolute;
@@ -55,8 +56,8 @@ a:hover {
 	text-align: center;
 }
 
-#elipses {
-	color: white;
+#arrow {
+	color: #B0E0E6;
 	opacity: .6;
 	top: 75%;
 	left: 48%;
@@ -66,10 +67,11 @@ a:hover {
 	cursor: pointer;
 }
 
-#elipses:hover {
+#arrow:hover {
 	-webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
+    transition: 0.1s;
     opacity: .7;
 }
 
@@ -88,19 +90,19 @@ a:hover {
 }
 
 #about-me {
-	height: 300px;
+	height: 200px;
 	width: 60%;
 	margin-left: 20%;
+	margin-bottom: 150px;
 	padding-top: 50px;
 	color: black;
+	border-bottom: 3px solid #B0E0E6;
 }
 
 #blog-post {
-	height: 500px;
+	height: 300px;
 	width: 60%;
-	margin-top: 250px;
 	margin-left: 20%;
-	margin-bottom: 5%;
-	background-color: white;
-	box-shadow: 1px 1px 5px #777777;
+	border-bottom: 3px solid #B0E0E6;
+	color: black;
 }
