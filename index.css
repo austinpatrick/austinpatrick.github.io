@@ -54,11 +54,16 @@ a:hover {
 	margin-top: 1%;
 	margin-left: 20%;
 	margin-bottom: 5%;
-	font-size: 30px;
+	font-size: 20px;
 	line-height: 50px;
 	vertical-align: middle;
 	background-color: #145374;
 	color: white;
+}
+
+#two p {
+	margin-top: -40px;
+	font-size: 12px;
 }
 
 #three {
