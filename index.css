@@ -7,7 +7,7 @@ body {
 
 	font-family: Walkway Bold;
 	color: black;
-	background-color: #E8E8E8;
+	background-color: white;
 }
 
 a {
@@ -31,7 +31,11 @@ a:hover {
 	vertical-align: middle;
 }
 
-#light {
+#one:hover {
+	text-transform: scale(1.2);
+}
+
+.light {
 	color: #5588A3;
 	display: inline-block;
 }
@@ -41,16 +45,48 @@ a:hover {
 }
 
 #middle {
-	color: #64868E
-;
+	color: #64868E;
 }
 
 #two {
+	height: 85px;
+	width: 60%;
+	margin-top: 1%;
+	margin-left: 20%;
+	margin-bottom: 5%;
+	font-size: 30px;
+	line-height: 50px;
+	vertical-align: middle;
+	background-color: #145374;
+	color: white;
+}
+
+#three {
 	height: 300px;
 	width: 60%;
 	margin-left: 20%;
 	color: #2F3032;
 	
+}
+
+#four {
+	height: 225px;
+	width: 60%;
+	margin-top: -100px;
+	margin-left: 20%;
+	margin-bottom: 20px;
+	padding-left: 5px;
+	font-size: 20px;
+	display: inline-block;
+	color: #5588A3;
+	background-color: #FAFAFA;
+}
+
+#five {
+	height: 300px;
+	width: 60%;
+	margin-left: 20%;
+	color: #2F3032;
 }
 
 #nav-list {
