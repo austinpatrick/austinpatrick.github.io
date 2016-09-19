@@ -5,8 +5,16 @@ body {
 	margin-bottom: 0;
 	padding-top: 4%;
 
+<<<<<<< HEAD
+#nav {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	padding-top: -50px;
+=======
 	font-family: Avenir Next;
 	color: black;
+>>>>>>> parent of fd9219a... update
 	background-color: white;
 }
 
