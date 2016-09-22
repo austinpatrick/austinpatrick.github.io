@@ -10,14 +10,25 @@
       	}
     </style>
     <script type="text/javascript">
+    	window.onload = function(){
+    		var logo = document.getElementById("logo");
+    		logo.style.opacity = "1";
+    		var el = document.getElementById("header");
+    		el.style.opacity = "0.8";
+    		//el.css({top: "-250px"}});
+    		
+		}
     	$(window).on('scroll', function () {
-    		alert("scroll works!")
+    		
         var v = $(window).scrollTop();
         if (v > 200) {
-            $('#nav').animate({"height": "75px","max-height":"75px"},500);
+            $('#nav').animate({"height": "15px","max-height":"75px"},500);
+            $('#home').animate({"height": "15px","max-height":"75px"},500);
+            $('#navigation').animate({"height": "15px","max-height":"75px"},500);
+            $('#social-media').animate({"height": "15px","max-height":"75px"},500);
         }
         else {
-            $('#nav').animate({"height": "150px","max-height":"150px"},500);
+            $('#nav').animate({"height": "15px","max-height":"150px"},500);
         }
     });
     </script>
@@ -43,7 +54,7 @@
 </div>
 <img id="cover-photo" src="images/dunes.jpg" />
 <div>
-	<h1 align="center" id="header">our next <span class="highlight-green">adventure</span> starts with <span class="highlight-green-large">you</span></h1>
+	<h1 align="center" id="header" class="fadein">our next <span class="highlight-green">adventure</span> starts with <span class="highlight-green-large">you</span></h1>
 	</div>
 <div>
 	<p align="center">Building a community that...</p>

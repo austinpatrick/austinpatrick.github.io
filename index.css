@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-
+	width: 100%;
 	background-color: #F8F8F8;
 }
 
@@ -8,10 +8,19 @@ a {
 	text-decoration: none;
 }
 
+
 #logo {
-	width: 100px;
-	height: auto;
-	margin-top: -25px;
+	width: auto;
+	height: 65%;
+	margin-top: 12px;
+	margin-left: 20px;
+	opacity: 0;
+}
+
+#logo:hover {
+	cursor: default;
+    transform: rotate(360deg);
+    transition: all .75s ease-in-out 0s;
 }
 
 #nav {
@@ -132,7 +141,7 @@ a {
 	color: #404040;
 	position: relative;
 	top: -350px;
-	opacity: .8;
+	opacity: 0;
 }
 
 .highlight-green {
