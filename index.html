@@ -1,22 +1,39 @@
 <html>
 <head>
 	<title>Helpful World</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="index.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+	<style>
+		body {
+        	font-family: 'Pavanam', sans-serif, 'thin';
+      	}
+    </style>
+    <script>
+    	$(window).on('scroll', function () {
+        var v = $(window).scrollTop();
+        if (v > 200) {
+            $('#nav').animate({"height": "75px","max-height":"75px"},500);
+        }
+        else {
+            $('#nav').animate({"height": "150px","max-height":"150px"},500);
+        }
+    });
+    </script>
 </head>
 
 <body>
 <div id="nav" align="center">
 	<div id="home" align="left">
-		<a href="#" id="nav-title">O<span id="title-small">helpful world</span></a>
+		<a href="#" id="nav-title"><img src="images/helpfulWorldLogo.png" id="logo"/><p id="title-small">helpful world</p></a>
 	</div>
 	<div id="navigation" align="center">
-
-		<span class="icon">h</span><a href="#">Home</a>
-		<span class="icon">b</span><a href="#">Blog</a>
-		<a href="#"><span id="help">How We Can Help</span></a>
-		<span class="icon">[o]</span><a href="#">Photos</a>
-		<span class="icon">a</span><a href="#">About</a>
+	<!-- <span class="icon">h</span> -->
+		<a href="#">Home</a>
+		<a href="#">Blog</a>
+		<a href="#"><span id="help">how we can help</span></a>
+		<a href="#">Photos</a>
+		<a href="#">About</a>
 	</div>
 	<div id="social-media" align="right">
 		<a>f</a>
@@ -24,9 +41,14 @@
 	
 </div>
 <img id="cover-photo" src="images/dunes.jpg" />
-<h1 align="center" id="header">Our next Adventure starts with you.</h1>
-<p align="center">Building a community that...</p>
-<p align="center">Truth is we can't get there without me and without you. Let's go help!</p>
+<div>
+	<h1 align="center" id="header">our next <span class="highlight-green">adventure</span> starts with <span class="highlight-green-large">you</span></h1>
+	</div>
+<div>
+	<p align="center">Building a community that...</p>
+	<p align="center">Truth is we can't get there without me and without you. Let's go help!</
+p></div>
+
 <br />
 <div id="background">
 	<div id="family">

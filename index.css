@@ -1,6 +1,6 @@
 body {
 	margin: 0;
-	font-family: Verdana;
+
 	background-color: #F8F8F8;
 }
 
@@ -8,7 +8,11 @@ a {
 	text-decoration: none;
 }
 
-
+#logo {
+	width: 100px;
+	height: auto;
+	margin-top: -25px;
+}
 
 #nav {
 	background-color: rgba(255,255,255,.96);
@@ -29,11 +33,14 @@ a {
 	margin-right: 5%;
 }
 
+#home p {
+	margin-top: -110px;
+	margin-right: -40px;
+}
+
 #nav-title {
 	font-size: 40px; 
-	margin-left: 20px;
 	vertical-align: middle;
-	color: white;
 	text-decoration: none;
 	display: inline-block;
 	color: #40bf80;
@@ -76,7 +83,7 @@ a {
 }
 
 #help  {
-	background-color: white;
+	background-color: rgba(255,255,255,0);
 	color: #40bf80;
 	border: 2px solid #40bf80;
 	border-radius: 2px;
@@ -104,7 +111,7 @@ a {
 	display: inline-block;
 	font-size: 25px; 
 	margin-left: 10px;
-	margin-right: 25px;
+	margin-right: 30px;
 	vertical-align: middle;
 	color: #40bf80;
 	text-decoration: none;
@@ -123,6 +130,18 @@ a {
 
 #header {
 	color: #404040;
+	position: relative;
+	top: -350px;
+	opacity: .8;
+}
+
+.highlight-green {
+	color: #40bf80;
+}
+
+.highlight-green-large {
+	color: #40bf80;
+	font-size: 55px;
 }
 
 #family {
@@ -193,7 +212,7 @@ a {
 
 #blog-post img {
 	border-radius: 1px;
-	border-bottom: 10px solid #40bf80;
+	border-bottom: 5px solid #40bf80;
 }
 
 #blog-post p {
@@ -213,7 +232,7 @@ a {
 	margin-top: -1px;
 	margin-bottom: -1px;
 	font-size: 35px;
-	color: #404040;
+	color: inherit;
 }
 
 #blog-photo {
