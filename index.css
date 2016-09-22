@@ -8,9 +8,7 @@ a {
 	text-decoration: none;
 }
 
-#blog-post a:visited {
-	color: #404040;
-}
+
 
 #nav {
 	background-color: rgba(255,255,255,.96);
@@ -63,6 +61,7 @@ a {
 #navigation a {	
 	margin-left: 30px;
 	margin-right: 20px;
+	color: inherit;
 }
 
 #navigation a:visited {
@@ -186,6 +185,10 @@ a {
 	z-index: 2;
 	opacity: 1;
 	border-radius: 3px;
+}
+
+#blog-post a:visited {
+	color: #404040;
 }
 
 #blog-post img {
