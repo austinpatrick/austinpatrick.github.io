@@ -9,8 +9,9 @@
         	font-family: 'Pavanam', sans-serif, 'thin';
       	}
     </style>
-    <script>
+    <script type="text/javascript">
     	$(window).on('scroll', function () {
+    		alert("scroll works!")
         var v = $(window).scrollTop();
         if (v > 200) {
             $('#nav').animate({"height": "75px","max-height":"75px"},500);
