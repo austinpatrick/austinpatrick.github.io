@@ -1,6 +1,7 @@
 <html>
 <head>
 	<title>Helpful World</title>
+	<script src="jquery-1.12.4.min.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="index.css">
 	<link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
@@ -10,27 +11,19 @@
       	}
     </style>
     <script type="text/javascript">
+    	
     	window.onload = function(){
     		var logo = document.getElementById("logo");
+    		var cover = document.getElementById("cover-cover");
     		logo.style.opacity = "1";
     		var el = document.getElementById("header");
     		el.style.opacity = "0.8";
-    		//el.css({top: "-250px"}});
-    		
+    		//el.css({top: "-250px"}});	
 		}
-    	$(window).on('scroll', function () {
-    		
-        var v = $(window).scrollTop();
-        if (v > 200) {
-            $('#nav').animate({"height": "15px","max-height":"75px"},500);
-            $('#home').animate({"height": "15px","max-height":"75px"},500);
-            $('#navigation').animate({"height": "15px","max-height":"75px"},500);
-            $('#social-media').animate({"height": "15px","max-height":"75px"},500);
-        }
-        else {
-            $('#nav').animate({"height": "15px","max-height":"150px"},500);
-        }
-    });
+		$(document).ready(function(){
+			alert("works!");
+		});
+
     </script>
 </head>
 
@@ -42,7 +35,7 @@
 	<div id="navigation" align="center">
 	<!-- <span class="icon">h</span> -->
 		<a href="#">Home</a>
-		<a href="#">Blog</a>
+		<a href="blog.html">Blog</a>
 		<a href="#"><span id="help">how we can help</span></a>
 		<a href="#">Photos</a>
 		<a href="#">About</a>
@@ -66,35 +59,41 @@
 		<img src="images/family.jpg" />
 		<h1 align="left">The Family</h1>
 		<p>Little excerpt blurb about the family. Tells their story.</p>
-		<p>read more</p>
+		<p class="read-more">+ read more</p>
 	</div>
-	<div id="left">
-		
-		<div id="blog-post">
-		<img id="blog-photo" src="images/night.jpg" />
-			
-			<h1 id="blog-title" align="left"><a href="#">Identity and Me</a></h1>
-			<p align="left">Written by <a href="#"><span class="name-color">Austin McDowell</span></a></p>
-			<p class="blog-body" align="left">Bloggers are now the third most trustworthy source of information, following only friends and family, according to a U.K. survey. That's right: Bloggers are trusted more than celebrities, journalists, brands, and politicians. But how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)</p>
-			<p class="blog-body" align="left">Well, just as your website homepage is like the front door to your business, so too is your blog homepage the front door to your business blog...</p>
-			<p class="read-more"><a href="#">+ read more</a></p>
+	<div id="blog-body">
+		<div id="left">	
+			<div id="blog-post">
+			<img id="blog-photo" src="images/night.jpg" />
+				
+				<h1 id="blog-title" align="left"><a href="#">Identity and Me</a></h1>
+				<p align="left">Written by <a href="#"><span class="name-color">Austin McDowell</span></a></p>
+				<p class="blog-body" align="left">Bloggers are now the third most trustworthy source of information, following only friends and family, according to a U.K. survey. That's right: Bloggers are trusted more than celebrities, journalists, brands, and politicians. But how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)</p>
+				<p class="blog-body" align="left">Well, just as your website homepage is like the front door to your business, so too is your blog homepage the front door to your business blog...</p>
+				<p class="read-more"><a href="#">+ read more</a></p>
+			</div>
+			<div id="blog-post">
+			<img id="blog-photo" src="images/garden.jpg" />
+				<h1 id="blog-title" align="left"><a href="#">Let's talk about the Edge of the World</a></h1>
+				<p align="left">Written by <a href="#"><span class="name-color">Austin McDowell</span></a></p>
+				<p class="blog-body" align="left">Bloggers are now the third most trustworthy source of information, following only friends and family, according to a U.K. survey. That's right: Bloggers are trusted more than celebrities, journalists, brands, and politicians. But how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)</p>
+				<p class="blog-body" align="left">Well, just as your website homepage is like the front door to your business, so too is your blog homepage the front door to your business blog...</p>
+				<p class="read-more"><a href="#">+ read more</a></p>
+			</div>
 		</div>
-		<div id="blog-post">
-		<img id="blog-photo" src="images/garden.jpg" />
-			<h1 id="blog-title" align="left"><a href="#">Let's talk about the Edge of the World</a></h1>
-			<p align="left">Written by <a href="#"><span class="name-color">Austin McDowell</span></a></p>
-			<p class="blog-body" align="left">Bloggers are now the third most trustworthy source of information, following only friends and family, according to a U.K. survey. That's right: Bloggers are trusted more than celebrities, journalists, brands, and politicians. But how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)</p>
-			<p class="blog-body" align="left">Well, just as your website homepage is like the front door to your business, so too is your blog homepage the front door to your business blog...</p>
-			<p class="read-more"><a href="#">+ read more</a></p>
+		<div id="right">
+			<a href="http://www.carwindowpoetry.com/about/"><img src="images/carwindowpoetry.jpg" /></a>
+
 		</div>
 	</div>
+	
 </div>
 <div>
 	<div id="" align="left"></div>
 	<div id="" ></div>
 </div>
 <div id="footer">
-	<a>Want to become a partner?</a>
+	<a>Partner with us!</a>
 </div>
 </body>	
 

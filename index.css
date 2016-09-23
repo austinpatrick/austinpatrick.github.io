@@ -1,5 +1,6 @@
 body {
 	margin: 0;
+	margin-right: 0;
 	width: 100%;
 	background-color: #F8F8F8;
 }
@@ -17,6 +18,7 @@ a {
 	margin-left: 20px;
 	opacity: 0;
 	cursor: pointer;
+	transition: all .75s ease-in-out;
 }
 
 #logo:hover {
@@ -35,6 +37,7 @@ a {
 	display: inline;
 	/*border-bottom: 1px solid #40bf80; */
 	box-shadow: 1px 1px 2px lightgray;
+	transition: all .4s ease-in-out;
 }
 
 #home {
@@ -61,7 +64,6 @@ a {
 	font-size: 15px; 
 	line-height: 40px;
 	margin-left: 20px;
-	margin-bottom: 10px;
 	vertical-align: middle;
 	text-decoration: none;
 	display: inline-block;
@@ -102,6 +104,7 @@ a {
 	padding-left: 13px;
 	padding-right: 13px;
 	padding-bottom: 8px;
+	transition: all .4s ease-in-out;
 }
 
 #help:hover {
@@ -113,7 +116,6 @@ a {
 	padding-left: 13px;
 	padding-right: 13px;
 	padding-bottom: 8px;
-	
 }
 
 #social-media {
@@ -136,6 +138,12 @@ a {
 #cover-photo {
 	width: 100%;
 	z-index: -1;
+	transition: all 1.2s ease-in-out;
+	z-index: 1
+}
+
+#cover-photo:hover {
+	transform: scale(1.07);
 }
 
 #dark {
@@ -157,6 +165,7 @@ a {
 	position: relative;
 	top: -480px;
 	opacity: 0;
+	transition: all .5s ease-in-out;
 }
 
 .highlight-green {
@@ -176,6 +185,13 @@ a {
 	margin-left: 15%;
 	/*border-top: 8px solid #40bf80;*/
 	color: #404040;
+	transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+
+#family:hover {
+	transform: scale(1.01); 
+	box-shadow: 1px 1px 2px lightgray;
 }
 
 #family img {
@@ -197,28 +213,48 @@ a {
 	padding-bottom: 20px;
 }
 
+#blog-body {
 
+}
 
 #left {
 	width: 45%;
 	height: auto;
 	margin-top: 30px;
 	margin-left: 15%;
-	background-color: #f2f2f2;
+	background-color: #f8f8f8;
 	z-index: 1;
 	display: inline-block;
 }
 
 #right {
-	background-color: white;
-	width: 20%;
-	margin-top: 5px;
+	background-color: #F8F8F8;
+	width: 25%;
+	height: 500px;
+	top: -1020px;
 	margin-left: 2.5%;
 	display: inline-block;
+	position: relative;
+}
+
+#right img {
+	width: 90%;
+	margin-bottom: 3px;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+#right img:hover {
+	transform: scale(1.03);
+	box-shadow: 1px 1px 2px lightgray;
+}
+
+#profile {
+
 }
 
 #blog-post {
-
+	cursor: pointer;
 	height: auto;
 	background-color: 	#FFFFFF;
 	margin-bottom: 20px;
@@ -228,6 +264,12 @@ a {
 	z-index: 2;
 	opacity: 1;
 	border-radius: 3px;
+	transition: all .2s ease-in-out;
+}
+
+#blog-post:hover {
+	transform: scale(1.02); 
+	box-shadow: 1px 1px 2px lightgray;
 }
 
 #blog-post a:visited {
@@ -269,6 +311,7 @@ a {
 	font-size: 17px;
 }
 
+
 .read-more {
 	margin-top: 30px;
 	color: #40bf80;
@@ -295,4 +338,10 @@ a {
 	vertical-align: middle;
 	margin-top: 20px;
 	padding-left: 15%;
+}
+
+#blog-center {
+	width: 50%;
+	height: auto;
+	margin-top: 70px;
 }

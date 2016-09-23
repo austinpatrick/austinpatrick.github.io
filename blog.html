@@ -1,25 +1,47 @@
 <html>
-
 <head>
-	<title>A / Z</title>
+<title>Helpful World</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="index.css">
-
+	<link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
+	<style>
+		body {
+        	font-family: 'Pavanam', sans-serif, 'thin';
+      	}
+    </style>
+    <script type="text/javascript">
+    	
+    	window.onload = function(){
+    		var logo = document.getElementById("logo");
+    		logo.style.opacity = "1";
+    		var el = document.getElementById("header");
+    		el.style.opacity = "0.8";
+    		//el.css({top: "-250px"}});
+		}
+		
+    </script>
 </head>
 
 <body>
-	<img src="images/dunes.jpg" id="cover-photo">
-	<br />
-	<div id="cover-photo-cover">
-		<ul id="nav-list">
-			<li id="nav-links"><a href="index.html">Home</a></li>
-			<li class="current"><a href="#">Blog</a></li>
-			<li class="nav-links"><a href="#">Photos</a></li>
-			<br />
-
-		</ul>
+	<div id="nav" align="center">
+		<div id="home" align="left">
+			<a href="#" id="nav-title"><img src="images/helpfulWorldLogo.png" id="logo"/><p id="title-small">helpful world</p></a>
+		</div>
+		<div id="navigation" align="center">
+		<!-- <span class="icon">h</span> -->
+			<a href="index.html">Home</a>
+			<a href="blog.html">Blog</a>
+			<a href="#"><span id="help">how we can help</span></a>
+			<a href="#">Photos</a>
+			<a href="#">About</a>
+		</div>
+		<div id="social-media" align="right">
+			<a>f</a>
+		</div>
 	</div>
-
-	<div id="blog-post" align="center">
-			
+	<div align="center">
+		<img src="images/horseshoe.jpg" id="blog-center"/>
 	</div>
-</body>	
+</body>
+
+</html>
