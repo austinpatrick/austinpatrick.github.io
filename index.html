@@ -14,9 +14,21 @@
     	
     	window.onload = function(){
     		var logo = document.getElementById("logo");
-    		var cover = document.getElementById("cover-cover");
-    		logo.style.opacity = "1";
+    		var h = document.getElementById("h");
+    		var b = document.getElementById("b");
+    		var p = document.getElementById("p");
+    		var a = document.getElementById("a");
+    		var s = document.getElementById("social-media");
+    		var help = document.getElementById("help"); 		
     		var el = document.getElementById("header");
+
+    		logo.style.opacity = "1";
+    		h.style.opacity = "1";
+    		b.style.opacity = "1";
+    		p.style.opacity = "1";
+    		a.style.opacity = "1";
+    		s.style.opacity = "1";
+    		help.style.opacity = "1";
     		el.style.opacity = "0.8";
     		//el.css({top: "-250px"}});	
 		}
@@ -30,15 +42,15 @@
 <body>
 <div id="nav" align="center">
 	<div id="home" align="left">
-		<a href="#" id="nav-title"><img src="images/helpfulWorldLogo.png" id="logo"/><p id="title-small">helpful world</p></a>
+		<a href="index.html" id="nav-title"><img src="images/helpfulWorldLogo.png" id="logo"/><p id="title-small">helpful world</p></a>
 	</div>
 	<div id="navigation" align="center">
 	<!-- <span class="icon">h</span> -->
-		<a href="#">Home</a>
-		<a href="blog.html">Blog</a>
+		<a href="#" id="h">Home</a>
+		<a href="blog.html" id="b">Blog</a>
 		<a href="#"><span id="help">how we can help</span></a>
-		<a href="#">Photos</a>
-		<a href="#">About</a>
+		<a href="#" id="p">Photos</a>
+		<a href="#" id="a">About</a>
 	</div>
 	<div id="social-media" align="right">
 		<a>f</a>
@@ -49,34 +61,24 @@
 <div>
 	<h1 align="center" id="header" class="fadein">our next <span class="highlight-green">adventure</span> starts with <span class="highlight-green-large">you</span></h1>
 </div>
-<div id="dark">
-	<p align="center">Building a community that...</p>
-	<p align="center">Truth is we can't get there without me and without you. Let's go help!</p>
-</div>
 
 <div id="background">
-	<div id="family">
-		<img src="images/family.jpg" />
-		<h1 align="left">The Family</h1>
-		<p>Little excerpt blurb about the family. Tells their story.</p>
-		<p class="read-more">+ read more</p>
+	<div id="feature">
+		<div id="feature-family">
+			<img src="images/family.jpg" />
+		</div>
+		<div id="feature-partner">
+			<ig src="images/carwindowpoetry.jpg" />
+		</div>
 	</div>
 	<div id="blog-body">
 		<div id="left">	
 			<div id="blog-post">
 			<img id="blog-photo" src="images/night.jpg" />
 				
-				<h1 id="blog-title" align="left"><a href="#">Identity and Me</a></h1>
+				<h1 id="blog-title" align="left"><a href="#">I like you</a></h1>
 				<p align="left">Written by <a href="#"><span class="name-color">Austin McDowell</span></a></p>
-				<p class="blog-body" align="left">Bloggers are now the third most trustworthy source of information, following only friends and family, according to a U.K. survey. That's right: Bloggers are trusted more than celebrities, journalists, brands, and politicians. But how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)</p>
-				<p class="blog-body" align="left">Well, just as your website homepage is like the front door to your business, so too is your blog homepage the front door to your business blog...</p>
-				<p class="read-more"><a href="#">+ read more</a></p>
-			</div>
-			<div id="blog-post">
-			<img id="blog-photo" src="images/garden.jpg" />
-				<h1 id="blog-title" align="left"><a href="#">Let's talk about the Edge of the World</a></h1>
-				<p align="left">Written by <a href="#"><span class="name-color">Austin McDowell</span></a></p>
-				<p class="blog-body" align="left">Bloggers are now the third most trustworthy source of information, following only friends and family, according to a U.K. survey. That's right: Bloggers are trusted more than celebrities, journalists, brands, and politicians. But how do you get people to fall in love with your blog in the first place? (Aside from remarkable content, of course.)</p>
+				<p class="blog-body" align="left">We don't need money to make something happen. In fact, I would argue that money stops us from making things happen more than anything just by limiting ourselves to what we can accomplish with it.</p>
 				<p class="blog-body" align="left">Well, just as your website homepage is like the front door to your business, so too is your blog homepage the front door to your business blog...</p>
 				<p class="read-more"><a href="#">+ read more</a></p>
 			</div>
@@ -86,11 +88,21 @@
 
 		</div>
 	</div>
-	
+	<!--<div id="family">
+		<img src="images/family.jpg" />
+		<h1 align="left">The Family</h1>
+		<p>Little excerpt blurb about the family. Tells their story.</p>
+		<p class="read-more">+ read more</p>
+	</div>-->
+	<div id="map">
+		<p></p>
+	</div>
 </div>
-<div>
-	<div id="" align="left"></div>
-	<div id="" ></div>
+<br />
+<div id="dark">
+	<p id="quote-one">" To <span class="large">see the world</span>, things dangerous to come to, to see behind walls, draw closer, to<span class="large">find each other</span> , and to feel. That is the purpose of life "</p> 
+	<br />
+	<p id="quote-two">- Walter Mitty</p>
 </div>
 <div id="footer">
 	<a>Partner with us!</a>

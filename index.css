@@ -18,7 +18,7 @@ a {
 	margin-left: 20px;
 	opacity: 0;
 	cursor: pointer;
-	transition: all .75s ease-in-out;
+	transition: all 2s ease-in-out;
 }
 
 #logo:hover {
@@ -32,7 +32,7 @@ a {
 	height: 70px;
 	line-height: 70px;
 	width: 100%;
-	z-index: 1;
+	z-index: 10;
 	position: fixed;
 	display: inline;
 	/*border-bottom: 1px solid #40bf80; */
@@ -50,6 +50,26 @@ a {
 #home p {
 	margin-top: -110px;
 	margin-right: -40px;
+}
+
+#h {
+	opacity: 0;
+	transition: all .5s ease-in-out;
+}
+
+#b {
+	opacity: 0;
+	transition: all 1s ease-in-out;
+}
+
+#p {
+	opacity: 0;
+	transition: all 2.5s ease-in-out;
+}
+
+#a {
+	opacity: 0;
+	transition: all 3s ease-in-out;
 }
 
 #nav-title {
@@ -98,13 +118,14 @@ a {
 #help  {
 	background-color: rgba(255,255,255,0);
 	color: #40bf80;
+	opacity: 0;
 	border: 2px solid #40bf80;
 	border-radius: 2px;
 	padding-top: 8px;
 	padding-left: 13px;
 	padding-right: 13px;
 	padding-bottom: 8px;
-	transition: all .4s ease-in-out;
+	transition: all 2s ease-in-out;
 }
 
 #help:hover {
@@ -128,6 +149,8 @@ a {
 	vertical-align: middle;
 	color: #40bf80;
 	text-decoration: none;
+	opacity: 0;
+	transition: all 4s ease-in-out;
 }
 
 #social-media:hover {
@@ -139,18 +162,50 @@ a {
 	width: 100%;
 	z-index: -1;
 	transition: all 1.2s ease-in-out;
-	z-index: 1
+	z-index: 0;
 }
 
 #cover-photo:hover {
 	transform: scale(1.07);
 }
 
+#quote-one {
+	width: 30%;
+	margin-left: 15%;
+	font-size: 25px;
+	display: inline-block;
+}
+
+.large {
+	color: #0086b3;
+	margin-left: 8px;
+
+	font-size: 40px;
+	font-style: bold;
+}
+
+#quote-two {
+	width: 35%;
+	margin-left: 15%;
+	font-size: 25px;
+	display: inline-block;
+}
+
+#quote-four {
+	width: 28%;
+	margin-left: 15%;
+	font-size: 25px;
+	display: inline-block;
+}
+
+#small {
+	margin-left: 14.5%;
+	font-size: 25px;
+}
+
 #dark {
 	width: 100%;
 	height: 350px;
-	top: -115px;
-	position: relative;
 	padding-top: 25px;
 	background-color: #40bf80;
 	color: white;
@@ -158,14 +213,18 @@ a {
 
 #background {
 	width: 100%;
+	z-index: 1;
+	top: -100px;
 }
 
 #header {
 	color: #404040;
-	position: relative;
-	top: -480px;
+	position: absolute;
+	top: 70px;
+	margin-left: 34%;
 	opacity: 0;
-	transition: all .5s ease-in-out;
+	z-index: 1;
+	transition: all 2s ease-in-out;
 }
 
 .highlight-green {
@@ -177,12 +236,49 @@ a {
 	font-size: 55px;
 }
 
+#feature {
+	width: 100%;
+	display: flex;
+	margin-top: 3%;
+}
+
+#feature-family {
+	width: 34%;
+	height: auto;
+	padding-left: 15%;
+	display: inline-block;
+}
+
+#feature-family img {
+	width: 100%;
+	height: auto;
+	transition: all 1.2s ease-in-out;
+	z-index: 0;
+}
+
+#feature-family img:hover {
+	transform: scale(1.02);
+}
+
+#feature-partner {
+	width: 33%;
+	height: 256px;
+	margin-left: 3%;
+	display: inline-block;
+	background-color: #40bf80;
+}
+
+#feature-partner img {
+	width: 100%;
+	height: auto;
+}
+
 #family {
 	width: 70%;
 	height: auto;
 	background-color: white;
-	margin-top: 35px;
 	margin-left: 15%;
+	margin-bottom: 410px;
 	/*border-top: 8px solid #40bf80;*/
 	color: #404040;
 	transition: all .2s ease-in-out;
@@ -190,7 +286,7 @@ a {
 }
 
 #family:hover {
-	transform: scale(1.01); 
+	transform: scale(1.02); 
 	box-shadow: 1px 1px 2px lightgray;
 }
 
@@ -214,13 +310,12 @@ a {
 }
 
 #blog-body {
-
+	height: 600px;
 }
 
 #left {
 	width: 45%;
-	height: auto;
-	margin-top: 30px;
+	margin-top: 40px;
 	margin-left: 15%;
 	background-color: #f8f8f8;
 	z-index: 1;
@@ -230,8 +325,7 @@ a {
 #right {
 	background-color: #F8F8F8;
 	width: 25%;
-	height: 500px;
-	top: -1020px;
+	top: -395px;
 	margin-left: 2.5%;
 	display: inline-block;
 	position: relative;
@@ -255,9 +349,9 @@ a {
 
 #blog-post {
 	cursor: pointer;
-	height: auto;
-	background-color: 	#FFFFFF;
-	margin-bottom: 20px;
+	height: 500px;
+	background-color: #FFFFFF;
+	margin-bottom: 10px;
 	padding-bottom: 25px;
 	/*box-shadow: 1px 1px 4px #bfbfbf;*/
 	color: #8c8c8c;
@@ -329,14 +423,21 @@ a {
 	text-decoration: underline;
 }
 
+#map {
+	width: 70%;
+	height: 500px;
+	background-color: #0086b3;
+	margin-left: 15%;
+	margin-bottom: 20px;
+}
+
 #footer {
 	width: 100%;
 	height: 60px;
-	background-color: #40bf80;
-	color: white;
+	background-color: white;
+	color: #40bf80;
 	line-height: 60px;
 	vertical-align: middle;
-	margin-top: 20px;
 	padding-left: 15%;
 }
 
