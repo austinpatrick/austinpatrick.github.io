@@ -93,14 +93,26 @@
 		<h1 align="left">The Family</h1>
 		<p>Little excerpt blurb about the family. Tells their story.</p>
 		<p class="read-more">+ read more</p>
-	</div>-->
+	</div>
 	<div id="map">
 		<p></p>
-	</div>
+	</div>-->
+	<div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 38.8339, lng: -104.8214},
+          scrollwheel: false,
+          zoom: 13
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl-Rvl22UZVtLKetqvcbpfQgx4HCPZ4Vg&callback=initMap"
+    async defer></script>
 </div>
-<br />
 <div id="dark">
-	<p id="quote-one">" To <span class="large">see the world</span>, things dangerous to come to, to see behind walls, draw closer, to<span class="large">find each other</span> , and to feel. That is the purpose of life "</p> 
+	<p id="quote-one">" To <span class="large">see the world</span>, things dangerous to come to, to see behind walls, draw closer, to<span class="large">find each other</span>, and to feel. That is the purpose of life "</p> 
 	<br />
 	<p id="quote-two">- Walter Mitty</p>
 </div>
