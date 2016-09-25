@@ -275,11 +275,18 @@ a {
 	margin-left: 3%;
 	display: inline-block;
 	background-color: #40bf80;
+	transition: all .2s ease-in-out;
 }
 
 #feature-partner img {
 	width: 100%;
 	height: auto;
+	transition: all .2s ease-in-out;
+}
+
+#feature-partner:hover {
+	transform: scale(1.02);
+	box-shadow: 1px 1px 2px lightgray;
 }
 
 #family {
