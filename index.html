@@ -1,19 +1,25 @@
 <html>
 <head>
 	<title>Helpful World</title>
-	<script src="jquery-1.12.4.min.js"></script>
+	<script src="jquery-3.1.1.min.js"></script>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="stylesheet" type="text/css" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Pavanam" rel="stylesheet">
 	<style>
 		body {
+
         	font-family: 'Pavanam', sans-serif, 'thin';
+      	}
+
+      	#header {
+      		font-size: 50px;
+      		font-family: 'Raleway', sans-serif, 'extra-light';
       	}
     </style>
     <script type="text/javascript">
     	
     	window.onload = function(){
-    		var logo = document.getElementById("logo");
     		var h = document.getElementById("h");
     		var b = document.getElementById("b");
     		var p = document.getElementById("p");
@@ -22,34 +28,77 @@
     		var help = document.getElementById("help"); 		
     		var el = document.getElementById("header");
 
-    		logo.style.opacity = "1";
     		h.style.opacity = "1";
     		b.style.opacity = "1";
     		p.style.opacity = "1";
     		a.style.opacity = "1";
     		s.style.opacity = "1";
     		help.style.opacity = "1";
-    		el.style.opacity = "0.8";
+    		el.style.opacity = "1";
     		//el.css({top: "-250px"}});	
+
+    		var coverPhoto = document.getElementById("cover-photo")
+    		var height = coverPhoto.height;
+
+
+    		var background = document.getElementById("background");
+    		
+		};
+		var top = 0;
+
+		var lastScrollTop = 0;
+		function nav() {
+			var nav = document.getElementById("nav");
+			var h = document.getElementById("h");
+    		var b = document.getElementById("b");
+    		var p = document.getElementById("p");
+    		var a = document.getElementById("a");
+    		var help = document.getElementById("help");
+    		var social = document.getElementById("social-media");
+    		var photo = document.getElementById("1");
+
+			// nav.style.backgroundColor = "rgba(255, 255, 255, .9)";
+			// h.style.color = "rgba(31, 73, 60, 1)";
+			// b.style.color = "rgba(31, 73, 60, 1)";
+			// p.style.color = "rgba(31, 73, 60, 1)";
+			// a.style.color = "rgba(31, 73, 60, 1)";
+			// help.style.border = "2px solid rgba(31, 73, 60, 1)";
+			// help.style.backgroundColor = "rgba(31, 73, 60, 1)";
+			// help.style.color = "white";
+			// social.style.color = "rgba(31, 73, 60, 1)";
+
+			var position = document.body.scrollTop;
+			if(position <= 450){
+				
+			photo.style.top = (.1 * -position) + 'px';
+			nav.style.top = (.3 * -position) + 'px';
+			}
+			
+
+		};
+
+		function name() {
+			var first = getElementById("1");
+
 		}
-		$(document).ready(function(){
-			alert("works!");
-		});
 
     </script>
 </head>
 
-<body>
+<body onscroll="nav()">
+<!--<div id="email-signup" align="center">
+	<div id="email-left"><p><span id="email-highlight">Sign up</span> for updates on your community!</p></div>
+</div>-->
 <div id="nav" align="center">
-	<div id="home" align="left">
-		<a href="index.html" id="nav-title"><img src="images/helpfulWorldLogo.png" id="logo"/><p id="title-small">helpful world</p></a>
-	</div>
+	<!-- <div id="home" align="left">
+		<a id="tag"><p>my <span class="highlight-green">Community</span></p></a>
+	</div> -->
 	<div id="navigation" align="center">
 	<!-- <span class="icon">h</span> -->
 		<a href="#" id="h">Home</a>
 		<a href="blog.html" id="b">Blog</a>
 		<a href="#"><span id="help">how we can help</span></a>
-		<a href="#" id="p">Photos</a>
+		<a href="#" id="p">Events</a>
 		<a href="#" id="a">About</a>
 	</div>
 	<div id="social-media" align="right">
@@ -57,29 +106,46 @@
 	</div>
 	
 </div>
-<img id="cover-photo" src="images/hailey.jpg" />
+<!-- <h1 align="center" id="header" class="fadein">together<span class="highlight-green"></span><span class="highlight-green-large"></span></h1> -->
+<!-- <div id="transparent">
+	.
+</div> -->
+<!-- <img id="cover-photo" src="images/beach2.jpg" /> -->
+
 <div>
-	<h1 align="center" id="header" class="fadein">our next <span class="highlight-green">adventure</span> starts with <span class="highlight-green-large">you</span></h1>
+	
+	<img id="1" src="images/trees.jpg" class="cover-multi" onmouseover="name()" />
+	<!-- <img id="2" src="images/website/photos/skyscraper.jpg" class="cover-multi"/>
+	<img id="3" src="images/website/photos/beach2.jpg" class="cover-multi"/>
+	<img id="4" src="images/website/photos/lake.jpg" class="cover-multi"/> -->
+	
 </div>
+<!--<div id="menu" align="center">
+	<a>Our friends</a>
+	<a>Music</a>
+	<a>Photos</a>
+</div>-->
 
 <div id="background">
-	<div id="feature">
+	<!-- <div id="feature">
+		<div id="feature-partner">
+			<h1>Sign up for our Newsletter!</h1>
+		</div>
 		<div id="feature-family">
 			<img src="images/family.jpg" />
 		</div>
-		<div id="feature-partner">
-			<ig src="images/carwindowpoetry.jpg" />
-		</div>
+		
 	</div>
 	<div id="blog-body">
 		<div id="left">	
 			<div id="blog-post">
-			<img id="blog-photo" src="images/night.jpg" />
+			<img id="blog-photo" src="images/stars.jpg" />
 				
-				<h1 id="blog-title" align="left"><a href="#">I like you</a></h1>
+				<h1 id="blog-title" align="left"><a href="#">Why I love the stars</a></h1>
 				<p align="left">Written by <a href="#"><span class="name-color">Austin McDowell</span></a></p>
-				<p class="blog-body" align="left">We don't need money to make something happen. In fact, I would argue that money stops us from making things happen more than anything just by limiting ourselves to what we can accomplish with it.</p>
-				<p class="blog-body" align="left">Well, just as your website homepage is like the front door to your business, so too is your blog homepage the front door to your business blog...</p>
+				<p class="blog-body" align="left">Every great experience I've ever had has been under the stars. Concerts, camping, and adventures with friends and family that shaped me into the man I am today. But that's just it, I was never <i>alone</i>.</p>
+				<p class="blog-body" align="left">I've shot weddings, engagements, parties, even a commercial and every time I head home at the end of the day, it's the people that I reflect on, not the photos.</p>
+				<p>My quesiton is <i>why</i>? Why do those around us have so much influence, so much impact on our lives?</p>
 				<p class="read-more"><a href="#">+ read more</a></p>
 			</div>
 		</div>
@@ -87,7 +153,7 @@
 			<a href="http://www.carwindowpoetry.com/about/"><img src="images/carwindowpoetry.jpg" /></a>
 
 		</div>
-	</div>
+	</div> -->
 	<!--<div id="family">
 		<img src="images/family.jpg" />
 		<h1 align="left">The Family</h1>
@@ -110,15 +176,16 @@
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCl-Rvl22UZVtLKetqvcbpfQgx4HCPZ4Vg&callback=initMap"
     async defer></script>
-</div>
-<div id="dark">
-	<p id="quote-one">" To <span class="large">see the world</span>, things dangerous to come to, to see behind walls, draw closer, to<span class="large">find each other</span>, and to feel. That is the purpose of life "</p> 
+    <!-- <div id="dark">
+	<p id="quote-one">To <span class="large">see the world</span>, things dangerous to come to, to see behind walls, draw closer, to<span class="large">find each other</span>, and to feel. That is the purpose of life</p> 
 	<br />
-	<p id="quote-two">- Walter Mitty</p>
-</div>
+	<p id="quote-two">Walter Mitty</p>
+</div> -->
 <div id="footer">
 	<a>Partner with us!</a>
 </div>
+</div>
+
 </body>	
 
 </html>
