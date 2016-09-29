@@ -9,12 +9,12 @@
 	<style>
 		body {
 
-        	font-family: 'Pavanam', sans-serif, 'thin';
+        	font-family: 'Raleway', sans-serif, 'thin';
       	}
 
-      	#header {
-      		font-size: 50px;
-      		font-family: 'Raleway', sans-serif, 'extra-light';
+      	#help {
+      		font-size: 35px;
+      		font-family: 'Pavanam', sans-serif, 'extra-light';
       	}
     </style>
     <script type="text/javascript">
@@ -24,7 +24,7 @@
     		var b = document.getElementById("b");
     		var p = document.getElementById("p");
     		var a = document.getElementById("a");
-    		var s = document.getElementById("social-media");
+    		//var s = document.getElementById("social-media");
     		var help = document.getElementById("help"); 		
     		var el = document.getElementById("header");
 
@@ -32,7 +32,7 @@
     		b.style.opacity = "1";
     		p.style.opacity = "1";
     		a.style.opacity = "1";
-    		s.style.opacity = "1";
+    		//s.style.opacity = "1";
     		help.style.opacity = "1";
     		el.style.opacity = "1";
     		//el.css({top: "-250px"}});	
@@ -54,7 +54,7 @@
     		var p = document.getElementById("p");
     		var a = document.getElementById("a");
     		var help = document.getElementById("help");
-    		var social = document.getElementById("social-media");
+    		//var social = document.getElementById("social-media");
     		var photo = document.getElementById("1");
 
 			// nav.style.backgroundColor = "rgba(255, 255, 255, .9)";
@@ -70,7 +70,7 @@
 			var position = document.body.scrollTop;
 			if(position <= 450){
 				
-			photo.style.top = (.1 * -position) + 'px';
+			photo.style.top = (.2 * -position) + 'px';
 			nav.style.top = (.3 * -position) + 'px';
 			}
 			
@@ -101,9 +101,9 @@
 		<a href="#" id="p">Events</a>
 		<a href="#" id="a">About</a>
 	</div>
-	<div id="social-media" align="right">
+	<!-- <div id="social-media" align="right">
 		<a>f</a>
-	</div>
+	</div> -->
 	
 </div>
 <!-- <h1 align="center" id="header" class="fadein">together<span class="highlight-green"></span><span class="highlight-green-large"></span></h1> -->
@@ -163,6 +163,14 @@
 	<div id="map">
 		<p></p>
 	</div>-->
+	<div id="pin" align="center">
+		<p id="learn-more">learn more</p>
+	</div>
+
+	<div id="learn" align="center">
+		<h1>About us</h1>
+	</div>
+
 	<div id="map"></div>
     <script>
       var map;
